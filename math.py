@@ -12,4 +12,8 @@ def multiply(x,y):
 
 #Divide implementation
 def divide(x,y): 
-	return x/y		#on main branch
+
+	if y==0:		#on Bug789 branch
+		return DIVIDE_BY_0_ERROR
+	else:
+		return x/y
